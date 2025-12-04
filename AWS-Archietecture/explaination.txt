@@ -1,1 +1,4 @@
 Explaination:
+I built a scalable and highly available AWS architecture using a multi-tier VPC spread across two Availability Zones. The public subnets host an Application Load Balancer that receives all incoming traffic, while the application servers run on EC2 instances inside private subnets through an Auto Scaling Group. Outbound internet access for these private instances is provided via a NAT Gateway, ensuring secure connectivity.
+For the data layer, I used Amazon RDS/Aurora in Multi-AZ mode to provide fault tolerance and reliable database operations. To improve performance and reduce the load on the database, I integrated ElastiCache (Redis) as a caching layer.
+Security is maintained through Security Groups, NACLs, and an optional AWS WAF placed in front of the ALB. Monitoring, logging, and alerting are handled through Amazon CloudWatch for complete observability of the system.
