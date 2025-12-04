@@ -1,1 +1,20 @@
 Explaination:
+a)Why cost monitoring is important for beginners?
+
+Cost monitoring is essential because beginners can easily leave resources running unintentionally (like EC2, NAT Gateways, ALBs, or RDS).
+Without alerts, charges accumulate silently, and AWS may bill you more than expected.
+Billing alarms help track usage, avoid overspending, and keep everything within Free Tier limits.
+
+b) What causes sudden increases in AWS bills?
+
+Common reasons for sudden AWS bill spikes include:
+Running EC2 instances 24/7
+Keeping NAT Gateway active (₹700–₹800/month)
+ALB charges when active
+High S3 PUT/GET traffic
+Using paid services (RDS, Elastic IP without EC2, DynamoDB reads/writes, Lambda GB-seconds)
+Transferring data across AZs
+Leaving CloudWatch logs and volumes uncleaned
+
+
+Billing alarms and Free Tier alerts protect against unexpected extra costs.
