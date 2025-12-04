@@ -1,1 +1,2 @@
 here is the explaination:
+I set up a Free Tier EC2 instance in a public subnet, assigned it a public IP address, and configured the security group to allow HTTP (80) and SSH (22). After connecting to the server, I installed Nginx and replaced its default web content with my own index.html resume to host it as a static webpage. Once Nginx was restarted, I could view the site through the instance’s public IP. For basic security, I limited SSH access to only my IP address and enabled automatic system updates.
